@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スクロールMENUレスポンシブ</title>
+  <link rel="stylesheet" href="./common/sanitize.css">
+  <link rel="stylesheet" href="./common/nav.css">
+</head>
+
+<body>
+  <!-- PCはpcHeaderスマホはspHeaderでclass切り替え -->
+  <!-- PCスクロールで100以下はheader、超えるとscrollHeaderのclassが付く -->
+  <header id="header" class="pcHeader">
+    <section class="headerContents">
+      <h1 class="headerH1"><img src="./imge/symbol.svg" alt="スクロールMENUレスポンシブ"><small>スクロール<br>MENU</small></h1>
+
+      <nav id="pcNav"><!-- pcメニュー表示 --></nav>
+
+      <!-- pcとsp共通メニュー要素を格納 -->
+      <div id="menuLi">
+        <ul>
+          <li class="childPul"><a href="#">TITLE1</a>
+            <ul class="pulMenu">
+              <li><a href="#">inmenu1</a></li>
+              <li><a href="#">inmenu2</a></li>
+              <li><a href="#">inmenu3</a></li>
+            </ul>
+          </li>
+          <li class="childPul"><a href="#">TITLE2</a>
+            <ul class="pulMenu">
+              <li><a href="#">inmenu1</a></li>
+              <li><a href="#">inmenu2</a></li>
+              <li><a href="#">inmenu3</a></li>
+              <li><a href="#">inmenu4</a></li>
+            </ul>
+          </li>
+          <li class="childPul"><a href="#">TITLE3</a>
+            <ul class="pulMenu">
+              <li><a href="#">inmenu1</a></li>
+              <li><a href="#">inmenu2</a></li>
+              <li><a href="#">inmenu3</a></li>
+              <li><a href="#">inmenu4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">TITLE4</a></li>
+          <li><a href="#">TITLE5</a></li>
+        </ul>
+      </div>
+      <ul class="sns">
+        <li><a href="#"><img src="./imge/icon_mail.svg" alt="mail"></a></li>
+        <li><a href="#"><img src="./imge/icon_insuta.svg" alt="insuta"></a></li>
+        <li><a href="#"><img src="./imge/icon_map.svg" alt="map"></a></li>
+      </ul>
+      <!-- spハンバーガーメニュー -->
+      <div id="menuBtn" class="openbtn"><span></span><span></span><span></span></div>
+    </section>
+  </header>
+
+  <nav id="spNav"><!-- spメニュー表示 --></nav>
+
+  <main class="main">
+    <p>contents</p>
+  </main>
+
+  <footer class="footer">
+    <p>footer</p>
+  </footer>
+
+  <script src="./common/jquery-3.3.1.min.js"></script>
+  <script src="./common/menu.js"></script>
+</body>
+
+</html>
